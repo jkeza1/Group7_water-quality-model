@@ -12,6 +12,15 @@
 
 ## Individual Analysis Reports
 
+### Excel Asaph (Member 1)
+
+#### Model-Building
+When I started building the neural network for the water quality classification task, I knew that just throwing layers together wouldn’t do it. I wanted to understand why certain choices work better than others, so I experimented with different architectures, regularization methods, and optimizers to find what balanced learning well without overfitting.
+
+#### My Chosen Architecture & Why
+##### Layers:
+I used **three hidden layers**: The first one with **32** neurons, the second with **64**, and the last one with **128**. This was inspired by a general rule of thumb to start with a smaller first layer and increase gradually.
+
 ### John Ongeri Ouma (Member 1)
 
 #### Model Design Rationale
