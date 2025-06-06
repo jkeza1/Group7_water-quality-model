@@ -1,0 +1,53 @@
+# Water Quality Analysis Report
+Date: June 6, 2025
+Location: Lake Victoria, Eastern Region
+Sample ID: WQ-2025-06-001
+
+## Physical Parameters
+| Parameter | Value | Unit | Standard Range |
+|-----------|-------|------|----------------|
+| Temperature | 24.3 | °C | 20-30 |
+| pH | 7.2 | - | 6.5-8.5 |
+| Turbidity | 5.8 | NTU | <10 |
+| Conductivity | 342 | μS/cm | 250-800 |
+
+## Chemical Parameters
+| Parameter | Result | Unit | Acceptable Limit |
+|-----------|--------|------|------------------|
+| Dissolved Oxygen | 7.8 | mg/L | >5.0 |
+| BOD | 2.4 | mg/L | <3.0 |
+| COD | 15.6 | mg/L | <20 |
+| Total Dissolved Solids | 180 | mg/L | <500 |
+| Nitrates | 4.2 | mg/L | <10 |
+| Phosphates | 0.08 | mg/L | <0.1 |
+
+## Microbiological Analysis
+| Parameter | Count | Unit | Maximum Limit |
+|-----------|-------|------|---------------|
+| Total Coliform | 12 | CFU/100mL | <50 |
+| E. coli | 0 | CFU/100mL | 0 |
+| Enterococci | 2 | CFU/100mL | <5 |
+
+## Heavy Metals
+| Metal | Concentration | Unit | Threshold |
+|-------|--------------|------|-----------|
+| Lead | 0.004 | mg/L | <0.01 |
+| Mercury | 0.0001 | mg/L | <0.001 |
+| Arsenic | 0.002 | mg/L | <0.01 |
+| Cadmium | 0.0008 | mg/L | <0.003 |
+
+## Conclusions
+- Water quality meets WHO standards for drinking water
+- All parameters within acceptable ranges
+- Regular monitoring recommended every 3 months
+- Minor turbidity elevation noted but within limits
+
+## Recommendations
+1. Continue current treatment protocols
+2. Implement quarterly monitoring schedule
+3. Install continuous pH monitoring system
+4. Update sampling procedures for microbiological analysis
+
+Analyzed by: Dr. Sarah Johnson
+Certified by: Environmental Protection Agency
+Report ID: EPA-2025-0601
