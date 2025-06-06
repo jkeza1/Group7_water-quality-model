@@ -18,8 +18,14 @@
 When I started building the neural network for the water quality classification task, I knew that just throwing layers together wouldn’t do it. I wanted to understand why certain choices work better than others, so I experimented with different architectures, regularization methods, and optimizers to find what balanced learning well without overfitting.
 
 #### My Chosen Architecture & Why
-##### Layers:
-I used **three hidden layers**: The first one with **32** neurons, the second with **64**, and the last one with **128**. This was inspired by a general rule of thumb to start with a smaller first layer and increase gradually.
+- **Layers**: I used **three hidden layers**: The first one with **32** neurons, the second with **64**, and the last one with **128**. This was inspired by a general rule of thumb to start with a smaller first layer and increase gradually.
+
+- **Activation**: I used **ReLU** (Rectified Linear Unit) because it's known for helping deep models learn faster and avoid the *vanishing gradient problem.*
+
+##### Why not more layers or more neurons?
+Initially, I tried adding a fourth layer and more neurons (like 256-128-64-32), but I found the model started overfitting quickly. It performed great on training but worse on validation. So I simplified it, and surprisingly, performance got more stable.
+
+
 
 ### John Ongeri Ouma (Member 1)
 
