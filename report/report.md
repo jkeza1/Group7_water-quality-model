@@ -29,11 +29,51 @@ Initially, I tried adding a fourth layer and more neurons (like 256-128-64-32), 
 ##### What Didn’t Work:
 When I first trained the model without **regularization or dropout**, I noticed:
 - The training accuracy kept rising till I got a constant accuracy of `1.0000`
-- The validation accuracy plateaued or even dropped to around `0.6340`; my validation loss was around `5.1220`, which was way higher than my training loss.
-- The model was learning too much from the training data — **classic overfitting**.
+- The validation accuracy plateaued or even dropped to around `0.6340`; my validation loss was around `5.1220`, which was way higher than my training loss `0.09514`.
+- The model was learning too much from the training data — *classic overfitting*.
 
 ##### What Worked:
- - **L1 Regularization (lambda = 0.001)**: I used `l1` because I wanted the model to learn sparse weights, essentially helping it ignore non-important features like `Organic_carbon` and `Trihalomethanes` which are not direct predictive of our target, `Potability`. It gently pushed unimportant weights toward zero, improving generalization.
+ - **L1 Regularization (lambda = 0.01)**: I used `l1` because I wanted the model to learn sparse weights, essentially helping it ignore non-important features like `Organic_carbon` and `Trihalomethanes` which are not direct predictive of our target, `Potability`. It gently pushed unimportant weights toward zero, improving generalization.
+
+ - **Dropout (rate = 0.25)**: I added a **dropout layer** after the last hidden layer. This meant that during training, `25%` of the neurons were randomly *“turned off.”* It seemed counterintuitive at first, but it made the model more robust.
+
+**Lesson**: Without these two, my model overfit easily. With them, validation accuracy improved and stayed close to training accuracy, which was a good sign.
+
+#### Optimization Choices: Learning Rate, Early Stopping & Batch Size
+- **Optimizer**: I chose `Adam (learning rate = 0.001)`. It adapts the learning rate as training progresses, which is perfect when you don’t want to micromanage training too much.
+    - When I tried `SGD`, learning was too slow, and it got stuck at poor local minima.
+
+- **Early Stopping (patience = 5)**: I didn’t want the model to keep training unnecessarily once performance stopped improving as was the case earlier. Early stopping helped prevent overfitting, and **restoring the best weights** gave me the most balanced performance.
+
+- **Batch Size = 128**: This was a sweet spot for me. Smaller batch sizes **(like 32)** led to noisy updates, while larger ones **(256+)** slowed down convergence. **128** gave fast, stable training.
+
+#### Results Summary
+- **Validation Accuracy**: **`67%`**
+- **Test Accuracy**: **`71%`**
+- **F1 Score**: **`0.675`**
+- **Precision**: **`0.692`**
+- **Recall**: **`0.701`**
+
+Overall, I was happy with the performance, especially considering the limited size and slight imbalance in the dataset.
+
+#### What I Learned
+- Tuning is **key**. It wasn’t always obvious what would work. I had to try and fail a few times.
+- **Simple is often better**. A compact architecture with dropout and regularization outperformed larger, complex ones.
+- **Don’t train forever**. Early stopping saved me a lot of time and helped avoid the trap of “maybe one more epoch.” larger numbers of epochs doesn't always mean the model will train better.
+- **Visuals helped**. Plotting loss and accuracy curves after each run gave me quick feedback on what was working and what wasn’t.
+
+#### Challenges I Faced
+- **Balancing Bias and Variance**: When I added too much regularization, the model underfit. When I removed it, overfitting returned. It was a delicate situation.
+- **Finding the right lambda**: I tried different values (0.1, 0.01, 0.001) and found 0.01 struck a balance. It was enough to regularize without hurting learning.
+- **Dealing with missing values and class imbalance**: I used interpolation and forward/backward fill techniques. If I skipped this, the model couldn’t even train. Also, there was an imbalace in our classes as there were `0 = 1998` and `1 = 1278`.
+
+#### Conclusion & Next Steps
+This project gave me a much clearer view of how to approach neural network design beyond just building models that "run." I learned how **each hyperparameter decision shapes the model’s behavior**, and how small changes can make a big difference in the real world.
+
+Next time, I’d love to:
+- Try **Keras Tuner** for automated hyperparameter tuning.
+- Use **confusion matrix-based thresholding** to boost precision or recall for underperforming classes.
+- Experiment with other optimizers like **RMSprop or Nadam**.
 
 ### John Ongeri Ouma (Member 1)
 
