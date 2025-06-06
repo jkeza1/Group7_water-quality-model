@@ -1,0 +1,13 @@
+1771626 | excelasaph | 2025-06-06 | removed unncessary README.md file
+0aaa68d | Excel Asaph | 2025-06-06 | Add files via upload
+96491eb | excelasaph | 2025-06-06 | seperated a different directory for the dataset file
+497e815 | Excel Asaph | 2025-06-06 | Adjust Dropout Rate (0.25) for the Last Hidden Layer for Model Regularization
+0856d98 | Excel Asaph | 2025-06-06 | Add short explanations for each code cell to improve notebook documentation.
+cdc384d | Excel Asaph | 2025-06-06 | Adjust Early Stopping Patience for Improved Model Training
+7e24ba3 | Keza | 2025-06-06 | feat: Add detailed model performance and metrics after training
+f2c0b7c | Keza | 2025-06-06 | feat: Add detailed model performance and metrics after training
+7a3c8ec | Keza | 2025-06-06 | Delete Keza_Joan_of_formative_II_starter_code_.ipynb
+60b56ce | Excel Asaph | 2025-06-06 | Created using Colab
+503c0c8 | Keza | 2025-06-05 | feat: changes to model training
+e96fe46 | Keza | 2025-06-05 | Initial commit: Added ML project structure
+364d552 | Keza | 2025-06-02 | Initial commit
