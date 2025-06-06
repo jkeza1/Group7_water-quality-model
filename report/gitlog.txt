@@ -1,3 +1,5 @@
+1037d52 | NicolleNM | 2025-06-06 | Added notebook to main branch from personal brach
+5dba326 | excelasaph | 2025-06-06 | updated gitlog.txt with latest commits
 a446eef | JohnOngeri | 2025-06-06 |  Add conservative neural model with L1 regularization, dropout, and early stopping for robust training under noise
 cdbbe6c | JohnOngeri | 2025-06-06 | Delete John_Ongeri_Ouma_formative_II_starter_code_.ipynb
 01dc5f9 | JohnOngeri | 2025-06-06 | Add conservative neural model with L1 regularization, dropout, and early stopping for robust training under noise
