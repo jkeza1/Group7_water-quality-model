@@ -25,7 +25,15 @@ When I started building the neural network for the water quality classification 
 ##### Why not more layers or more neurons?
 Initially, I tried adding a fourth layer and more neurons (like 256-128-64-32), but I found the model started overfitting quickly. It performed great on training but worse on validation. So I simplified it, and surprisingly, performance got more stable.
 
+#### Preventing Overfitting: Regularization and Dropout
+##### What Didn’t Work:
+When I first trained the model without **regularization or dropout**, I noticed:
+- The training accuracy kept rising till I got a constant accuracy of `1.0000`
+- The validation accuracy plateaued or even dropped to around `0.6340`; my validation loss was around `5.1220`, which was way higher than my training loss.
+- The model was learning too much from the training data — **classic overfitting**.
 
+##### What Worked:
+ - **L1 Regularization (lambda = 0.001)**: I used `l1` because I wanted the model to learn sparse weights, essentially helping it ignore non-important features like `Organic_carbon` and `Trihalomethanes` which are not direct predictive of our target, `Potability`. It gently pushed unimportant weights toward zero, improving generalization.
 
 ### John Ongeri Ouma (Member 1)
 
