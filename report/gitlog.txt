@@ -1,3 +1,13 @@
+a446eef | JohnOngeri | 2025-06-06 |  Add conservative neural model with L1 regularization, dropout, and early stopping for robust training under noise
+cdbbe6c | JohnOngeri | 2025-06-06 | Delete John_Ongeri_Ouma_formative_II_starter_code_.ipynb
+01dc5f9 | JohnOngeri | 2025-06-06 | Add conservative neural model with L1 regularization, dropout, and early stopping for robust training under noise
+5b7663e | excelasaph | 2025-06-06 | created group report in report.md
+8ad09e2 | excelasaph | 2025-06-06 | created group report in report.md
+cd0848f | excelasaph | 2025-06-06 | created group report in report.md
+95c512a | excelasaph | 2025-06-06 | seperated all notebook files into the 'notebooks' dir
+d8bb1dd | excelasaph | 2025-06-06 | intialized report.md in the 'report' dir
+d30b780 | excelasaph | 2025-06-06 | intialized report.pdf in the 'report' dir
+30efe6a | excelasaph | 2025-06-06 | intialized gitlog.txt in the 'report' dir
 1771626 | excelasaph | 2025-06-06 | removed unncessary README.md file
 0aaa68d | Excel Asaph | 2025-06-06 | Add files via upload
 96491eb | excelasaph | 2025-06-06 | seperated a different directory for the dataset file
