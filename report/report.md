@@ -1,4 +1,26 @@
 # Water Quality Model Analysis Report
+A deep learning project to predict water potability using neural networks. Built by Group 7 as part of the Introduction to Machine Learning course.
+
+## GitHub Repository:
+[Link to the GitHub](https://github.com/jkeza1/Group7_water-quality-model.git)
+
+## Project Structure
+
+```
+├── data/
+│   └── water_potability.csv  
+├── notebooks/
+│   ├── excel_asaph_copy_of_formative_II_starter_code_.ipynb
+│   ├── NICOLAS_Copy_Of_Formative_II_Starter_Code_.ipynb
+│   ├── keza_joan_of_formative_ii_starter_code.ipynb
+│   ├── nicolle_marizani_formative_II_starter_code_.ipynb
+│   └── John_Ongeri_Ouma_formative_II_starter_code_.ipynb
+├── report/
+│   ├── gitlog.txt               
+│   ├── report.md                
+│   └── report.pdf              
+└── README.md                    
+```
 
 ## Training Results Summary
 
