@@ -1,3 +1,7 @@
+87a3682 | excelasaph | 2025-06-07 | updated report.md, including added explanations and summary
+d7b1b62 | excelasaph | 2025-06-07 | updated report.md, including added explanations and summary
+3d0925c | excelasaph | 2025-06-06 | updated report.md, including added explanations and summary
+6dce936 | excelasaph | 2025-06-06 | updated gitlog.txt with latest commits
 60a6239 | NickMuhigi | 2025-06-06 | Merge branch 'main' of https://github.com/jkeza1/Group7_water-quality-model
 53142b5 | NickMuhigi | 2025-06-06 | Added Neural Network Model
 0597c80 | excelasaph | 2025-06-06 | updated gitlog.txt with latest commits
