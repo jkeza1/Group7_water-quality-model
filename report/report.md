@@ -12,7 +12,8 @@
 
 ## Individual Analysis Reports
 
-### Excel Asaph (Member 1)
+
+### **Excel Asaph (Member 1)**
 
 #### Model-Building
 When I started building the neural network for the water quality classification task, I knew that just throwing layers together wouldn’t do it. I wanted to understand why certain choices work better than others, so I experimented with different architectures, regularization methods, and optimizers to find what balanced learning well without overfitting.
@@ -67,8 +68,6 @@ Overall, I was happy with the performance, especially considering the limited si
 - **Finding the right lambda**: I tried different values (0.1, 0.01, 0.001) and found 0.01 struck a balance. It was enough to regularize without hurting learning.
 - **Dealing with missing values and class imbalance**: I used interpolation and forward/backward fill techniques. If I skipped this, the model couldn’t even train. Also, there was an imbalace in our classes as there were `0 = 1998` and `1 = 1278`.
 
-// ...existing code...
-
 #### Comparative Analysis with Teammates
 
 When I compared my model's performance with my teammates', I discovered some fascinating insights about how different approaches to the same problem can lead to such varying results. Let me break down what I observed:
@@ -118,7 +117,8 @@ Next time, I’d love to:
 - Use **confusion matrix-based thresholding** to boost precision or recall for underperforming classes.
 - Experiment with other optimizers like **RMSprop or Nadam**, and learning rates.
 
-### Nicolle Marizani (Member 2)
+
+### **Nicolle Marizani (Member 2)**
 
 #### Parameter Justification
 
@@ -220,7 +220,8 @@ Next time, I’d love to:
 | Nicolle | Stable training, decent accuracy, conservative | Low recall/precision on class 1 |
 | Joan | Decent F1 from high LR, responds to positives | Lowest accuracy, optimizer issues |
 
-### John Ongeri Ouma (Member 3)
+
+### **John Ongeri Ouma (Member 3)**
 
 #### Model Design Process & Rationale
 
@@ -295,7 +296,8 @@ This configuration ensures training stops when the model plateaus, preventing no
 | Excel | Weak recall (0.40) makes it unsuitable for critical applications |
 | Nicolas | Good precision but poor recall (0.38) and generalization |
 
-### Joan Keza (Member 3)
+
+### **Joan Keza (Member 4)**
 
 #### My Thought Process Behind Model Design
 
@@ -435,7 +437,8 @@ Where Nicolas Does Okay: His performance is solid, though a dropout of 0.5 may h
 - Nicolle: Precision-heavy, but fails on recall, very weak sensitivity
 - Excel: Lacks recall and robustness details, possibly over-prioritizes precision
 
-### Nicolas Muhigi (Member 5)
+
+### **Nicolas Muhigi (Member 5)**
 
 #### Model Parameters & Configuration
 
