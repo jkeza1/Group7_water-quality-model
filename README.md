@@ -39,19 +39,22 @@ A deep learning project to predict water potability using neural networks. Built
    - L2 Regularization (λ=0.002)
    - Nadam Optimizer
    - Accuracy: 74.3%
-   - F1 Score: 0.717
+   - F1 Score: 0.71
+   - [View Notebook](notebooks/NICOLAS_Copy_Of_Formative_II_Starter_Code_.ipynb)
 
 4. **Joan Keza**
    - L1 Regularization (λ=0.001)
    - Adagrad Optimizer
    - Accuracy: 66.7%
    - F1 Score: 0.390
+   - - [View Notebook](notebooks/keza_joan_of_formative_ii_starter_code.ipynb)
 
 5. **Nicolle Marizani**
    - RMSprop Optimizer
    - Accuracy: 65.4%
    - Precision: 0.750
    - Recall: 0.172
+   - - [View Notebook](notebooks/nicolle_marizani_formative_II_starter_code_.ipynb)
 
 ## Dataset
 
