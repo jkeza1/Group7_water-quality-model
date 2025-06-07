@@ -67,13 +67,56 @@ Overall, I was happy with the performance, especially considering the limited si
 - **Finding the right lambda**: I tried different values (0.1, 0.01, 0.001) and found 0.01 struck a balance. It was enough to regularize without hurting learning.
 - **Dealing with missing values and class imbalance**: I used interpolation and forward/backward fill techniques. If I skipped this, the model couldn’t even train. Also, there was an imbalace in our classes as there were `0 = 1998` and `1 = 1278`.
 
+// ...existing code...
+
+#### Comparative Analysis with Teammates
+
+When I compared my model's performance with my teammates', I discovered some fascinating insights about how different approaches to the same problem can lead to such varying results. Let me break down what I observed:
+
+##### Comparison with John's Model
+John's model's performance drw my attention, and I had to analyse why:
+
+**The Numbers:**
+- My accuracy: 71% vs John's 92.8%
+- My F1 score: 0.675 vs John's 0.939
+- My recall: 0.701 vs John's 0.929
+
+**What I Could Have Done Better:**
+1. **Regularization Strategy**: 
+   - I used a stronger L1 (0.01) thinking it would help with feature selection
+   - John's milder L1 (0.005) proved more effective and it removed noise without being too aggressive
+   - **Lesson learned**: Sometimes less is more with regularization
+
+2. **Dropout**:
+   - My static 0.25 dropout was too simplistic
+   - John's approach (0.3→0.2→0.1) was brilliant as it adapted to each layer's needs
+   - **Key insight I got from this**: Layer-specific dropout rates make more sense architecturally
+
+##### Comparison with Nicolas's Model
+Nicolas took a different approach that yielded some interesting results too:
+
+**The Numbers:**
+- Accuracy: My 71% vs Nicolas's 74.3%
+- F1 score: My 0.675 vs Nicolas's 0.717
+- Recall: My 0.701 vs Nicolas's 0.702
+
+**What I Could Have Done Better:**
+1. **Choice of Regularization**:
+   - My L1 regularization was focused on sparsity while Nicolas's L2 (0.002) provided smoother weight decay
+   - **What I realized**: L2 might have been better for this dataset's noise patterns
+
+2. **Optimizer Selection**:
+   - My Adam optimizer was solid but basic for this dataset
+   - Nicolas's Nadam added Nesterov momentum, giving better convergence
+   - **Future note to self**: Consider momentum-based optimizers for similar tasks like this one
+
 #### Conclusion & Next Steps
 This project gave me a much clearer view of how to approach neural network design beyond just building models that "run." I learned how **each hyperparameter decision shapes the model’s behavior**, and how small changes can make a big difference in the real world.
 
 Next time, I’d love to:
 - Try **Keras Tuner** for automated hyperparameter tuning.
 - Use **confusion matrix-based thresholding** to boost precision or recall for underperforming classes.
-- Experiment with other optimizers like **RMSprop or Nadam**.
+- Experiment with other optimizers like **RMSprop or Nadam**, and learning rates.
 
 ### Nicolle Marizani (Member 2)
 
